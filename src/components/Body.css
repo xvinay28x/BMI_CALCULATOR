@@ -1,0 +1,17 @@
+#male{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 10%;
+    
+
+    
+}
+#female {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    float: right;
+    margin-right: 10%;
+    
+}

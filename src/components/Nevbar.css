@@ -1,0 +1,23 @@
+.header{
+    background-color: rgb(246, 4, 101);
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#heading1{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+#heading2{
+    font-size: 22px;
+    color: white;
+    /* margin-top: 0px; */
+    line-height: 1px;
+}
+#gif{
+    height: 100px;
+}
