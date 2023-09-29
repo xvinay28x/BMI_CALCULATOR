@@ -3,9 +3,11 @@ import './Body.css'
 
 export default function body() {
     return (
-        <div>
-            <img id="male" src="man.png"></img>
-            <img id="female" src="woman.png"></img>
+        <div className="body">
+            <h1 id="text">Choose Your Sex</h1>
+            <img id="male" src="man.png"/>
+            <img id="female" src="woman.png"/>
+            
         </div>
     )
 }

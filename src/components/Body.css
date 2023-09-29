@@ -1,17 +1,25 @@
 #male{
     height: 100px;
     width: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 10%;
-    
-
-    
 }
+
 #female {
     height: 100px;
     width: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     float: right;
     margin-right: 10%;
+    
+}
+#text{
+    text-align: center;
+    margin-top: 20px;
+    color: dimgrey;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+#male_input{
     
 }
