@@ -1,3 +1,8 @@
+.body{
+    margin-top: 65;
+    overflow: visible;
+    position: static;
+}
 #text {
     text-align: center;
     margin-top: 20px;
@@ -7,7 +12,7 @@
 }
 
 .img_cont {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -60,7 +65,7 @@ input[type='radio'] {
 
 #height {
     width: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     border-bottom: 2px solid black;
     background: fixed;
@@ -91,7 +96,7 @@ input[type='radio'] {
 
 #weight {
     width: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     border-bottom: 2px solid black;
     background: fixed;

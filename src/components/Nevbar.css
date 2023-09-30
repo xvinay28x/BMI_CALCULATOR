@@ -6,6 +6,9 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 #heading1{
     font-size: 70px;

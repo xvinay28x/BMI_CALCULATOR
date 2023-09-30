@@ -1,12 +1,16 @@
 import './App.css';
 import Nevbar from './components/Nevbar';
 import Body from './components/Body';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <Nevbar />
-      <Body />
+      <div className="main">
+        <Nevbar />
+        <Body />
+        <Footer />
+      </div>
     </>
   );
 }
