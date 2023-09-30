@@ -1,25 +1,129 @@
-#male{
+#text {
+    text-align: center;
+    margin-top: 20px;
+    color: dimgrey;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img_cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.male_cont {
+    width: 120px;
+}
+
+.female_cont {
+    width: 120px;
+}
+
+#male {
     height: 100px;
     width: 100px;
-    margin-top: 20px;
     margin-left: 10%;
 }
 
 #female {
     height: 100px;
     width: 100px;
-    margin-top: 20px;
     float: right;
     margin-right: 10%;
-    
+
 }
-#text{
-    text-align: center;
+
+#male_inp {
+    margin-left: 55px;
+    height: 15px;
+    width: 15px;
+
+}
+
+input[type='radio'] {
+    accent-color: rgb(246, 4, 101);
+}
+
+#female_inp {
+    margin-left: 55px;
+    height: 15px;
+    width: 15px;
+}
+
+.height_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#height {
+    width: 200px;
     margin-top: 20px;
-    color: dimgrey;
+    border: none;
+    border-bottom: 2px solid black;
+    background: fixed;
+    outline: none;
+    text-align: center;
+    color: rgb(246, 4, 101);
     font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
 }
-#male_input{
-    
+
+#height_label {
+    color: dimgray;
+    font-family: initial;
+}
+
+#cm {
+    color: rgb(210, 207, 207);
+    float: right;
+    margin-left: 10px;
+
+}
+
+.weight_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#weight {
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: fixed;
+    outline: none;
+    text-align: center;
+    color: rgb(246, 4, 101);
+    font-size: 30px;
+}
+
+#weight_label {
+    color: dimgray;
+    font-family: initial;
+}
+
+#kg {
+    color: rgb(210, 207, 207);
+    float: right;
+    margin-left: 10px;
+}
+
+.button_cont {
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+}
+#calculate{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(235, 158, 4);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family:monospace;
+    font-size: 25px;
 }
