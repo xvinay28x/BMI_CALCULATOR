@@ -89,6 +89,11 @@ export default function Body() {
                     <h1>Your BMI is : {bmi}</h1>
                     <p>{message}</p>
                 </div>
+                <h1>jbhdicnondo</h1>
+                <h1>jbhdicnondo</h1>
+                <h1>jbhdicnondo</h1>
+                <h1>jbhdicnondo</h1>
+                <h1>jbhdicnondo</h1>
             </form>
         </div>
     )

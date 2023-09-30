@@ -1,7 +1,9 @@
 .body{
-    margin-top: 65;
-    overflow: visible;
+    position: relative;
+    margin-top: 130px;
+    overflow: hidden;
     position: static;
+    background-color: aqua;
 }
 #text {
     text-align: center;
