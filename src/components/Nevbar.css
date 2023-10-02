@@ -1,13 +1,8 @@
 .header{
     background-color: rgb(246, 4, 101);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: auto;
+    text-align: center;
 }
 #heading1{
     font-size: 70px;
@@ -17,7 +12,6 @@
 #heading2{
     font-size: 22px;
     color: white;
-    /* margin-top: 0px; */
     line-height: 1px;
 }
 #gif{

@@ -1,9 +1,6 @@
 .body{
-    position: relative;
-    margin-top: 130px;
-    overflow: hidden;
-    position: static;
-    background-color: aqua;
+    flex: 1;
+    overflow: auto;
 }
 #text {
     text-align: center;
@@ -127,10 +124,13 @@ input[type='radio'] {
 #calculate{
     height: 40px;
     width: 200px;
-    background-color: rgb(235, 158, 4);
+    background-color: rgb(235, 143, 4);
     color: white;
     border-radius: 10px;
     border: none;
     font-family:monospace;
     font-size: 25px;
+}
+#calculate:hover{
+    background-color: rgb(71, 70, 70);
 }
