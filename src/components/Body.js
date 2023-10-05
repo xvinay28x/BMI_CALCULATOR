@@ -5,30 +5,33 @@ import './Body.css'
 export default function Body() {
 
     // const [sex, setSex] = usestate("");
-    const [height, setHeight] = useState();
-    const [weight, setWeight] = useState();
-    const [bmi, setBmi] = useState();
+    const [height, setHeight] = useState('');
+    const [weight, setWeight] = useState('');
+    const [bmi, setBmi] = useState(null);
     const [message, setMessage] = useState("");
 
     // Logic-----
 
     let calbmi = (e) => {
         e.preventDefault();
-        if (weight == 0 || height == 0) {
+        if (weight <= 0 || height <= 0) {
             alert("Please enter the valid height or weight")
         }
         else {
-            let bmi = (weight / (height * height) * 703)
+            let bmi = (weight / (height/100 * height/100))
             setBmi(bmi.toFixed(1))
 
-            if (bmi < 25) {
-                setMessage("You are underweight")
+            if (bmi < 18.5) {
+                setMessage("You are underweight ! 😒")
             }
-            else if (bmi >= 25 & bmi < 30) {
-                setMessage("You are fir")
+            else if (bmi >= 18.5 & bmi <= 24.9) {
+                setMessage("You are fit ! 😊")
             }
+            else if (bmi >= 25.0 & bmi <= 29.9) {
+                setMessage("You are overweight ! 😒")
+            }    
             else {
-                setMessage("You are overweight")
+                setMessage("You are obesity ! 😒")
             }
         }
     }

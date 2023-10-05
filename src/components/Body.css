@@ -124,7 +124,7 @@ input[type='radio'] {
 }
 
 #calculate {
-    height: 40px;
+    height: auto;
     width: 200px;
     padding: 5px;
     background-color: rgb(235, 143, 4);
@@ -154,10 +154,12 @@ input[type='radio'] {
 }
 
 .result_cont {
-    margin-top: 10px;
-    margin: auto;
     width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+    background-color: rgb(156, 163, 155);
+    padding: auto;
+    border-radius: 50px;
     text-align: center;
+    align-items: center;
+    position: center;
+    backface-visibility: 50;
 }
