@@ -86,14 +86,9 @@ export default function Body() {
                     </button>
                 </div>
                 <div className="result_cont">
-                    <h1>Your BMI is : {bmi}</h1>
+                    <h1>{bmi}</h1>
                     <p>{message}</p>
                 </div>
-                <h1>jbhdicnondo</h1>
-                <h1>jbhdicnondo</h1>
-                <h1>jbhdicnondo</h1>
-                <h1>jbhdicnondo</h1>
-                <h1>jbhdicnondo</h1>
             </form>
         </div>
     )
