@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import './Body.css'
+import Swal from 'sweetalert2';
 
 export default function Body() {
 
@@ -15,7 +16,7 @@ export default function Body() {
     let calbmi = (e) => {
         e.preventDefault();
         if (weight <= 0 || height <= 0) {
-            alert("Please enter the valid height or weight")
+            Swal.fire('Please enter valid Height or Weight')
         }
         else {
             let bmi = (weight / (height/100 * height/100))
@@ -33,6 +34,7 @@ export default function Body() {
             else {
                 setMessage("You are obesity ! 😒")
             }
+            e.
         }
     }
 
@@ -44,7 +46,8 @@ export default function Body() {
                     <div className="male_cont">
                         <img
                             id="male"
-                            src="man.png" />
+                            src="man.png"
+                            alt="male"/>
                         <input
                             id="male_inp"
                             type="radio"
@@ -55,7 +58,8 @@ export default function Body() {
                     <div className="female_cont">
                         <img
                             id="female"
-                            src="woman.png" />
+                            src="woman.png"
+                            alt="female"/>
                         <input
                             id="female_inp"
                             type="radio"

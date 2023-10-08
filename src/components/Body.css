@@ -154,12 +154,10 @@ input[type='radio'] {
 }
 
 .result_cont {
-    width: 50%;
+    width: 250px;
     margin: auto;
     margin-top: 20px;
     background-color: rgb(127, 233, 78);
-    padding: auto;
-    border-radius: 50px;
+    border-radius: 20px;
     text-align: center;
-    backface-visibility: 50;
 }
