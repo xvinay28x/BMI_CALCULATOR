@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Body.css'
 import Swal from 'sweetalert2';
 
@@ -10,16 +10,28 @@ export default function Body() {
     const [weight, setWeight] = useState('');
     const [bmi, setBmi] = useState(null);
     const [message, setMessage] = useState("");
+    const bodyRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        if (message == "") {
+            return
+        }
+        
+        if (bodyRef.current) {
+            bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+        }
+    }, [message])
+
 
     // Logic-----
 
     let calbmi = (e) => {
-        e.preventDefault();
         if (weight <= 0 || height <= 0) {
             Swal.fire('Please enter valid Height or Weight')
         }
         else {
-            let bmi = (weight / (height/100 * height/100))
+            let bmi = (weight / (height / 100 * height / 100))
             setBmi(bmi.toFixed(1))
 
             if (bmi < 18.5) {
@@ -30,23 +42,24 @@ export default function Body() {
             }
             else if (bmi >= 25.0 & bmi <= 29.9) {
                 setMessage("You are overweight ! 😒")
-            }    
+            }
             else {
                 setMessage("You are obesity ! 😒")
             }
+
+            setIsVisible(true);
         }
     }
 
     return (
-        <div className="body">
+        <div className="body" ref={bodyRef}>
             <h1 id="text">Choose Your Sex</h1>
-            <form onSubmit={calbmi}>
                 <div className="img_cont">
                     <div className="male_cont">
                         <img
                             id="male"
                             src="man.png"
-                            alt="male"/>
+                            alt="male" />
                         <input
                             id="male_inp"
                             type="radio"
@@ -58,7 +71,7 @@ export default function Body() {
                         <img
                             id="female"
                             src="woman.png"
-                            alt="female"/>
+                            alt="female" />
                         <input
                             id="female_inp"
                             type="radio"
@@ -88,14 +101,14 @@ export default function Body() {
                 <div className="button_cont">
                     <button
                         id="calculate"
-                        type="submit">Calculate
+                        type="submit"
+                        onClick={calbmi}>Calculate
                     </button>
                 </div>
-                <div className="result_cont">
+                {isVisible && <div className="result_cont">
                     <h1>{bmi}</h1>
                     <p>{message}</p>
-                </div>
-            </form>
+                </div>}
         </div>
     )
 }

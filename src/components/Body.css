@@ -127,6 +127,7 @@ input[type='radio'] {
     height: auto;
     width: 200px;
     padding: 5px;
+    margin: 20px;
     background-color: rgb(235, 143, 4);
     color: white;
     border-radius: 10px;
@@ -156,7 +157,6 @@ input[type='radio'] {
 .result_cont {
     width: 250px;
     margin: auto;
-    margin-top: 20px;
     background-color: rgb(127, 233, 78);
     border-radius: 20px;
     text-align: center;
