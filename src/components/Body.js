@@ -34,7 +34,6 @@ export default function Body() {
             else {
                 setMessage("You are obesity ! 😒")
             }
-            e.
         }
     }
 
